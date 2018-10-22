@@ -1,0 +1,160 @@
+@import 'partials/normalize';
+@import 'partials/variables';
+@import 'partials/mixins';
+@import 'partials/base';
+@import 'partials/layout';
+@import 'partials/fonts';
+
+
+
+
+
+
+body, html{
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: $primary-Color;
+  @include heightAndWidth(100%, 100%);
+  font-family: $mainFont;
+}
+
+
+
+
+p{
+  margin: 0;
+  padding: 0;
+  font-size: $mainFontSize;
+}
+
+span{
+
+  text-transform: $textTransform;
+}
+
+
+/*-------
+
+
+  MAIN
+
+
+--------*/
+
+.container{
+  @include heightAndWidth(88%, 100%);
+  margin: $marginSize;
+  @include flex(flex, space-between, null, column);
+}
+
+header{
+  @include flex(flex, center, center, column wrap);
+  @include heightAndWidth(100%, 100%);
+  @media screen and (min-width: $tablet-width){
+  @include flex(flex, center, center, row nowrap);
+    @media screen and (min-width:
+  1240px) {
+      @include flex(flex, left, center, row nowrap);
+
+    }
+}
+}
+
+.logo{
+  @include flex(flex, center, center, null);
+  padding: $paddingSize;
+  margin-bottom: $marginBot;
+  text-align: $textAlign;
+
+  img{
+    min-height: 200px;
+    width: auto;
+    @media screen and (min-width: $tablet-width){
+      min-height: 300px;
+  }
+  }
+}
+
+
+
+.search-form{
+  padding: $paddingSize;
+  @include flex(flex, center, center, null);
+}
+
+.search-option{
+  display: inline-block;
+  position: relative;
+  text-align: $textAlign;
+  margin-bottom: $marginBot;
+  @include heightAndWidth(50px, auto);
+  p{
+    margin-bottom: $marginBot * 2;
+  }
+}
+.loader{
+  display: none;
+}
+
+
+
+/*-------
+
+ARTICLE
+
+-------*/
+
+
+.image_area{
+}
+
+.contentList{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0;
+}
+
+.articles{
+  @include flex(flex, center, center, row wrap);
+  @include heightAndWidth(500px, 480px);
+  list-style: none;
+  background-size: cover;
+  @media screen and(min-width: $tablet-width){
+    @include heightAndWidth(500px, 384px);
+  }
+  @media screen and (min-width: $desktop-width) {
+  @include heightAndWidth(500px, 360px);
+
+  }
+}
+
+.caption{
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  font-size: 16px;
+  text-align: center;
+}
+
+
+/*-----
+
+FOOTER
+
+------*/
+
+
+footer {
+  color: $secondaryColor;
+  font-size: 1rem;
+  //margin-bottom: $marginBot * 3;
+  text-align: $textAlign;
+  //padding: 0 2rem;
+  @media screen and (min-width: 1240px){
+    @include flex(flex, left, center, null);
+  }
+}

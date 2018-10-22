@@ -1,0 +1,35 @@
+@import "variables";
+
+
+
+@mixin flex($display, $justify, $align, $flex-flow){
+  display: $display;
+  justify-content: $justify;
+  align-items: $align;
+  flex-flow: $flex-flow;
+}
+
+
+@mixin heightAndWidth($height, $width){
+  height: $height;
+  width: $width;
+}
+
+
+
+@mixin tablet {
+  @media (min-width: $tablet-width) {
+    @content;
+  }
+}
+
+
+
+  @mixin desktop {
+    @media (min-width: $desktop-width) {
+      @content;
+    }
+  }
+
+
+
