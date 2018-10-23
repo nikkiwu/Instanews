@@ -1,9 +1,6 @@
 $('select').selectric();
 
 
-
-
-
 const $articleList = $('.contentList');
 
 $('.loader').hide();
@@ -24,15 +21,15 @@ $('select').change('click', function () {
     }).done(function(data) {
         let resultData = '';
 
-        let $dataSet = data.results.filter(function (item) {
+        const $dataSet = data.results.filter(function (item) {
             return item.multimedia.length;
         }).slice(0, 12);
 
         $.each($dataSet, function(key, value) {
-            let url = value.url;
-            let image = value.multimedia[4].url;
-            let title = value.title;
-            let caption = value.abstract;
+            const url = value.url;
+            const image = value.multimedia[4].url;
+            const title = value.title;
+            const caption = value.abstract;
 
 
             resultData += '<a target="_blank" href=' + url + '><li class="articles" alt="'+ title +'" style="background-image:url(' + image + ');"><p class="caption">' + caption + '</p></li></a>';

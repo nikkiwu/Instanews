@@ -1,3 +1,9 @@
+@import "variables";
+@import "mixins";
+@import "fonts";
+
+
+
 header{
   @include flex(flex, center, center, column wrap);
   @include heightAndWidth(91%, 100%);
@@ -13,15 +19,19 @@ header{
 
 
 .minified{
-  height: 60%;
+  height: 44%;
   transition: $primary-Transition;
+  @media screen and (min-width: $tablet-width){
+    height: 15%;
+    @include flex(flex, flex-start, flex-start, row);
+  }
   @media screen and(min-width: $desktop-width){
-    height: 30%;
+    height: 20%;
   }
   .logo img{
     transition: $primary-Transition;
     height: 100px;
-    width: 100px;
+    width: 150px;
   }
   .search-option p{
     font-size: $mainFontSize / 1.2;
@@ -39,8 +49,8 @@ header{
     transition: $primary-Transition;
   }
 
+  }
 
-}
 
 
 .search-form{
@@ -52,10 +62,8 @@ header{
     text-align: $textAlign;
     margin-bottom: $marginBot;
     @include heightAndWidth(50px, auto);
-    p{
-      margin-bottom: $marginBot * 2;
-    }
   }
+
 }
 
 

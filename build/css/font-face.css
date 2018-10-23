@@ -1,19 +1,19 @@
 @font-face {
-    font-family: OpenSans-bold;
-    src: url("../../assets/fonts/OpenSans-bold.ttf");
+    font-family: "OpenSans_bold";
+    src: url("../../assets/fonts/opensans-bold.woff2");
+    format("woff2"),
+    src: url("../../assets/fonts/opensans-bold.woff")
+    format("woff");
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: OpenSans-BoldItalic;
-    src: url("../../assets/fonts/OpenSans-boldItalic.ttf");
-}
-
-@font-face {
-    font-family: OpenSans-Light;
-    src: url("../../assets/fonts/OpenSans-Light.ttf");
-}
-
-@font-face {
-    font-family: OpenSans-LightItalic;
-    src: url("../../assets/fonts/OpenSans-LightItalic.ttf");
+    font-family: "OpenSans-Light";
+    src: url("../../assets/fonts/opensans-light.woff2");
+    format("woff2"),
+src: url("../../assets/fonts/opensans-light.woff");
+    format("woff");
+    font-weight: normal;
+    font-style: normal;
 }
