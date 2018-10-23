@@ -15,6 +15,11 @@
   width: $width;
 }
 
+@mixin minHminW($min-height, $min-width){
+  min-height: $min-height;
+  min-width: $min-width;
+
+}
 
 
 @mixin tablet {

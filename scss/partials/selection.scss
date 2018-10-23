@@ -1,0 +1,50 @@
+
+.contentList{
+  @include heightAndWidth(100%, 100%);
+  @include flex(flex, space-between, stretch, row wrap);
+  padding: 0;
+  .articles{
+    @include heightAndWidth(100%, 100%);
+    @include flex(flex, flex-end, flex-end, row wrap);
+    @include minHminW(50vh, 50%);
+    background-size: cover;
+    transition: $primary-Transition;
+    .articles:hover :not(.caption){
+      filter:blur(2px) brightness(60%);
+    }
+  }
+}
+
+
+a{
+  @include heightAndWidth(100%, 100%);
+  text-decoration: none;
+  @media screen and (min-width: $tablet-width){
+    @include heightAndWidth(100%, 50%);
+  } @media screen and (min-width: $desktop-width) {
+  @include heightAndWidth(100%, 25%);
+}
+}
+
+
+.caption{
+  color: $primary-Color;
+  background: linear-gradient(rgba(0,0,0,.50) 0,rgba(0,0,0,.50));
+  font-size: $mainFontSize / 1.2;
+  text-align: $textAlign;
+  z-index:1;
+  opacity:1;
+  transition:$primary-Transition;
+
+  @media screen and (min-width: $desktop-width){
+    opacity: 0;
+    z-index: 2;
+
+  }
+}
+@media screen and (min-width: $desktop-width){
+  .articles:hover :not(.articles){
+    opacity: 1;
+  }
+}
+

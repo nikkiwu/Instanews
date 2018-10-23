@@ -1,0 +1,20 @@
+.loader{
+  margin-left: 35%;
+  display: none;
+  @include heightAndWidth(100px, 100px);
+  @media screen and (min-width: $tablet-width){
+    margin-left: 45%;
+
+  }
+}
+
+
+
+footer {
+  color: $secondaryColor;
+  font-size: $mainFontSize;
+  text-align: $textAlign;
+  @media screen and (min-width: 1240px){
+    @include flex(flex, left, center, null);
+  }
+}

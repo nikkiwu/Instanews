@@ -1,0 +1,25 @@
+@import "variables";
+@import "fonts";
+@import "mixins";
+
+
+body, html{
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: $primary-Color;
+  @include heightAndWidth(100%, 100%);
+  font-family: $mainFont;
+
+}
+
+p{
+  margin: 0;
+  padding: 0;
+  font-size: $mainFontSize;
+}
+
+span{
+
+  text-transform: $textTransform;
+}

@@ -1,12 +1,16 @@
 $('select').selectric();
 
 
+
+
+
 const $articleList = $('.contentList');
+
 $('.loader').hide();
 
 $('select').change('click', function () {
     $articleList.empty();
-
+    $('header').addClass('minified');
     $('.loader').show();
 
     let url = 'https://api.nytimes.com/svc/topstories/v2/';
@@ -31,7 +35,7 @@ $('select').change('click', function () {
             let caption = value.abstract;
 
 
-            resultData += '<li class="articles" alt="'+ title +'" style="background-image: url(' + image + ');"> <a href=' + url + '>' + '</a> <p class="caption">' + caption + '</p></li>';
+            resultData += '<a target="_blank" href=' + url + '><li class="articles" alt="'+ title +'" style="background-image:url(' + image + ');"><p class="caption">' + caption + '</p></li></a>';
         });
 
         $('.loader').hide();

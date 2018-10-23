@@ -1,0 +1,76 @@
+header{
+  @include flex(flex, center, center, column wrap);
+  @include heightAndWidth(91%, 100%);
+  margin: $marginSize;
+  @media screen and (min-width: $tablet-width){
+    @include flex(flex, center, center, row nowrap);
+    @media screen and (min-width: $desktop-width) {
+      @include flex(flex, left, center, row nowrap);
+
+    }
+  }
+}
+
+
+.minified{
+  height: 60%;
+  transition: $primary-Transition;
+  @media screen and(min-width: $desktop-width){
+    height: 30%;
+  }
+  .logo img{
+    transition: $primary-Transition;
+    height: 100px;
+    width: 100px;
+  }
+  .search-option p{
+    font-size: $mainFontSize / 1.2;
+    transition: $primary-Transition;
+
+  }
+
+  .search-form .search-option{
+    height: 100px;
+    transition: $primary-Transition;
+  }
+
+  .search-form .search-option p{
+    margin-bottom: 0;
+    transition: $primary-Transition;
+  }
+
+
+}
+
+
+.search-form{
+  padding: $paddingSize;
+  @include flex(flex, center, center, null);
+  .search-option{
+    display: inline-block;
+    position: relative;
+    text-align: $textAlign;
+    margin-bottom: $marginBot;
+    @include heightAndWidth(50px, auto);
+    p{
+      margin-bottom: $marginBot * 2;
+    }
+  }
+}
+
+
+
+
+.logo{
+  @include flex(flex, center, center, null);
+  padding: $paddingSize;
+  margin-bottom: $marginBot;
+  text-align: $textAlign;
+
+  img{
+    @include heightAndWidth(200px, 200px);
+    @media screen and (min-width: $tablet-width){
+      @include heightAndWidth(300px, 200px);
+    }
+  }
+}
