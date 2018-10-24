@@ -22,11 +22,8 @@ header{
   @include heightAndWidth(44%, 100%);
   transition: $primary-Transition;
   @media screen and (min-width: $tablet-width){
-    @include heightAndWidth(15%, 100%);
-    @include flex(flex, flex-start, flex-start, row);
-  }
-  @media screen and(min-width: $desktop-width){
     @include heightAndWidth(20%, 100%);
+    @include flex(flex, flex-start, flex-start, row);
   }
   .logo img{
     transition: $primary-Transition;
