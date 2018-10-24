@@ -14,16 +14,16 @@ Stretch goals:
 ✓ Article appears on hover
 
 
-##Useage
+## Useage
 
 Instanews helps user select between popular categories and organizes in a user-friendly way. 
 
 **behind the hood**
 
-AJAX fetches API provided by NYTIMES, and with JQuery we are able to cycle through all popular/selected categories. 
+AJAX fetches API provided by NYTIMES, and with JQuery we are able to cycle through all popular/selected categories. In-order to display received API, we need to find the value of the object and concatenate them into one element. 
 
 
-##Screenshot
+## Screenshot
 
 
 
@@ -51,7 +51,7 @@ AJAX fetches API provided by NYTIMES, and with JQuery we are able to cycle throu
 
 
 
-## Installtion 
+## Installation 
 
 Follow https://nikkiwu.github.io/instanews/
 
@@ -72,10 +72,10 @@ Clone and open in text editor.
 * Eslint
 
 
-##Meta
+## Meta
 
 Created by **Nikki Wu**
 
 WDP Fall 2018 - nikkiwu9@gmail.com
 
-Orginal creator of site - REDAcademy 
+Original creator of site - REDAcademy 
