@@ -19,19 +19,18 @@ header{
 
 
 .minified{
-  height: 44%;
+  @include heightAndWidth(44%, 100%);
   transition: $primary-Transition;
   @media screen and (min-width: $tablet-width){
-    height: 15%;
+    @include heightAndWidth(15%, 100%);
     @include flex(flex, flex-start, flex-start, row);
   }
   @media screen and(min-width: $desktop-width){
-    height: 20%;
+    @include heightAndWidth(20%, 100%);
   }
   .logo img{
     transition: $primary-Transition;
-    height: 100px;
-    width: 150px;
+    @include heightAndWidth(100px, 150px);
   }
   .search-option p{
     font-size: $mainFontSize / 1.2;
@@ -40,7 +39,6 @@ header{
   }
 
   .search-form .search-option{
-    height: 100px;
     transition: $primary-Transition;
   }
 

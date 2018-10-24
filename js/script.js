@@ -1,6 +1,6 @@
 $('select').selectric();
 
-
+const $selection = $('.selection');
 const $articleList = $('.contentList');
 
 $('.loader').hide();
@@ -14,6 +14,8 @@ $('select').change('click', function () {
     url += this.value;
     url += '.json';
     url += '?' + $.param({'api-key': 'ff0599e4f3a24cf58038240ffc091e3b'});
+
+
 
     $.ajax({
         url: url,
@@ -42,5 +44,11 @@ $('select').change('click', function () {
     })
         .always(function() {
             $('.loader').hide();
-        })
+        });
+
+    $selection.on('click', function () {
+        alert("doesn't load");
+    })
 });
+
+
