@@ -45,7 +45,7 @@ function getStories(section) {
             return item.multimedia.length;
         }).slice(0, 12);
 
-        $.each($dataSet, function(key, value) {
+        for(let value of $dataSet){
             const url = value.url;
             const image = value.multimedia[4].url;
             const title = value.title;
@@ -53,11 +53,13 @@ function getStories(section) {
 
 
             resultData += '<a target="_blank" href=' + url + '><li class="articles" alt="'+ title +'" style="background-image:url(' + image + ');"><p class="caption">' + caption + '</p></li></a>';
-        });
+        };
 
         $('.loader').hide();
         $('.contentList').append(resultData);
-    }).fail(function() {
+    })
+
+.fail(function() {
         $('.loader').append('p').text('Something went wrong, sorry!');
     })
         .always(function() {
