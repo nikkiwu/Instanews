@@ -2,16 +2,34 @@ $('select').selectric();
 
 const $selection = $('.selection');
 const $articleList = $('.contentList');
+const $loader = $('.loader');
 
-$('.loader').hide();
 
-$('select').change('click', function () {
+$loader.hide();
+
+
+$('select').on('change', function () {
+    const section = $(this).val();
+
+    if (!section.length) {
+        return;
+    }
+
     $articleList.empty();
     $('header').addClass('minified');
     $('.loader').show();
 
+    getStories(section);
+
+});
+
+
+
+function getStories(section) {
+
+
     let url = 'https://api.nytimes.com/svc/topstories/v2/';
-    url += this.value;
+    url += section;
     url += '.json';
     url += '?' + $.param({'api-key': 'ff0599e4f3a24cf58038240ffc091e3b'});
 
@@ -49,6 +67,6 @@ $('select').change('click', function () {
     $selection.on('click', function () {
         alert("doesn't load");
     })
-});
 
+}
 
