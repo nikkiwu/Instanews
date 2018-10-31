@@ -2,7 +2,7 @@
 
 
 
-@mixin flex($display, $justify, $align, $flex-flow){
+@mixin flex($display, $justify, $align, $flex-flow) {
   display: $display;
   justify-content: $justify;
   align-items: $align;
@@ -10,12 +10,20 @@
 }
 
 
-@mixin heightAndWidth($height, $width){
+@mixin allpadding($top, $right, $bottom, $left) {
+  padding-top: $top;
+  padding-right: $right;
+  padding-bottom: $bottom;
+  padding-left: $left;
+}
+
+
+@mixin heightAndWidth($height, $width) {
   height: $height;
   width: $width;
 }
 
-@mixin minHminW($min-height, $min-width){
+@mixin minHminW($min-height, $min-width) {
   min-height: $min-height;
   min-width: $min-width;
 
@@ -30,11 +38,8 @@
 
 
 
-  @mixin desktop {
-    @media (min-width: $desktop-width) {
-      @content;
-    }
+@mixin desktop {
+  @media (min-width: $desktop-width) {
+    @content;
   }
-
-
-
+}
