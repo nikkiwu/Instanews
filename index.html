@@ -6,31 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Instanews</title>
-  <!-- My Style, note you can use style.min.css for Production -->
+    <!-- My Style, note you can use style.min.css for Production -->
     <link rel="stylesheet" href="./assets/fonts/font-face.css">
     <link rel="stylesheet" href="./build/css/selectric.css">
     <link rel="stylesheet" href="./build/css/style.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="assets/images/nyt-logo.svg" alt="NYTIMES LOGO">
+<header>
+    <div class="logo">
+        <img src="assets/images/nyt-logo.svg" alt="NYTIMES LOGO">
+    </div>
+    <form action="" class="search-form">
+        <div class="search-option">
+            <p>Choose a selection:</p>
+            <select title="options" class="selectric">
+                <option class="selection">Sections ...</option>
+                <option value="books">Books</option>
+                <option value="arts">Arts</option>
+                <option value="business">Business</option>
+                <option value="sports">Sports</option>
+                <option value="technology">Technology</option>
+                <option value="fashion">Fashion</option>
+            </select>
         </div>
-        <form action="" class="search-form">
-            <div class="search-option">
-                <p>Choose a selection:</p>
-                <select title="options" class="selectric">
-                    <option class="selection">Sections ...</option>
-                    <option value="books">Books</option>
-                    <option value="arts">Arts</option>
-                    <option value="business">Business</option>
-                    <option value="sports">Sports</option>
-                    <option value="technology">Technology</option>
-                    <option value="fashion">Fashion</option>
-                </select>
-            </div>
-        </form>
-    </header>
+    </form>
+</header>
 
 <section class="image_area">
     <ul class="contentList">
@@ -45,11 +45,11 @@
 </footer>
 
 
-  <!-- jQuery CDN -->
+<!-- jQuery CDN -->
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/selectric@1.13.0/public/jquery.selectric.min.js"></script>
-  <!-- My Script -->
-  <script src="./build/js/script.min.js"></script>
+<!-- My Script -->
+<script src="./build/js/script.min.js"></script>
 </body>
 
 </html>
