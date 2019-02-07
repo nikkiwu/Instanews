@@ -33,7 +33,7 @@ $(document).ready(function () {
         let url = 'https://api.nytimes.com/svc/topstories/v2/';
         url += section;
         url += '.json';
-        url += '?' + $.param({'api-key': 'ff0599e4f3a24cf58038240ffc091e3b'});
+        url += '?' + $.param({'api-key': '47egFC3LFcveFp9EtkmNED9zvlsM72g1'});
 
 
         $.ajax({

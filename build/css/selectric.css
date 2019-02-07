@@ -3,265 +3,265 @@
 ======================================*/
 .selectric-wrapper {
     transition: 1s;
-  position: relative;
-  cursor: pointer;
+    position: relative;
+    cursor: pointer;
 }
 
 .selectric-responsive {
     transition: 1s;
-  width: 100%;
+    width: 100%;
 }
 
 .selectric {
     transition: 1s;
-  margin-top: 10px;
-  border: 2px solid red;
-  border-radius: 4px;
-  background: #041328;
-  position: relative;
+    margin-top: 10px;
+    border: 2px solid red;
+    border-radius: 4px;
+    background: #041328;
+    position: relative;
 
 }
 
 .selectric .label {
     transition: 1s;
-  display: block;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  margin: 0 38px 0 10px;
-  font-size: 15px;
-  font-weight: bold;
-  line-height: 38px;
-  color: white;
-  height: 38px;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0 38px 0 10px;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 38px;
+    color: white;
+    height: 38px;
 }
 
 .selectric .button {
     transition: 1s;
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 38px;
-  height: 38px;
-  color: #FFF;
-  text-align: center;
-  font: 0/0 a;
-  *font: 20px/38px Lucida Sans Unicode, Arial Unicode MS, Arial;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 38px;
+    height: 38px;
+    color: #FFF;
+    text-align: center;
+    font: 0/0 a;
+    *font: 20px/38px Lucida Sans Unicode, Arial Unicode MS, Arial;
 }
 
 .selectric .button:after {
     transition: 1s;
-  content: " ";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  width: 0;
-  height: 0;
-  border: 4px solid transparent;
-  border-top-color: red;
-  border-bottom: none;
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 0;
+    height: 0;
+    border: 4px solid transparent;
+    border-top-color: red;
+    border-bottom: none;
 }
 
 .selectric-focus .selectric {
     transition: 1s;
-  background: #1d2028;
+    background: #1d2028;
 }
 
 .selectric-hover .selectric {
     transition: 1s;
-  background: #172d4c;
+    background: #172d4c;
 }
 
 .selectric-hover .selectric .button {
     transition: 1s;
-  color: #e6e6e6;
+    color: #e6e6e6;
 }
 
 .selectric-hover .selectric .button:after {
     transition: 1s;
-  border-top-color: #e6e6e6;
+    border-top-color: #e6e6e6;
 }
 
 .selectric-open {
     transition: 1s;
-  z-index: 9999;
+    z-index: 9999;
 }
 
 .selectric-open .selectric-items {
     transition: 1s;
-  display: block;
+    display: block;
 }
 
 .selectric-disabled {
     transition: 1s;
-  filter: alpha(opacity=50);
-  opacity: 0.5;
-  cursor: default;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+    cursor: default;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .selectric-hide-select {
     transition: 1s;
-  position: relative;
-  overflow: hidden;
-  width: 0;
-  height: 0;
+    position: relative;
+    overflow: hidden;
+    width: 0;
+    height: 0;
 }
 
 .selectric-hide-select select {
     transition: 1s;
-  position: absolute;
-  left: -100%;
+    position: absolute;
+    left: -100%;
 }
 
 .selectric-hide-select.selectric-is-native {
     transition: 1s;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 10;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
 }
 
 .selectric-hide-select.selectric-is-native select {
     transition: 1s;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  border: none;
-  z-index: 1;
-  box-sizing: border-box;
-  opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    border: none;
+    z-index: 1;
+    box-sizing: border-box;
+    opacity: 0;
 }
 
 .selectric-input {
     transition: 1s;
-  position: absolute !important;
-  top: 0 !important;
-  left: 0 !important;
-  overflow: hidden !important;
-  clip: rect(0, 0, 0, 0) !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  width: 1px !important;
-  height: 1px !important;
-  outline: none !important;
-  border: none !important;
-  *font: 0/0 a !important;
-  background: none !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 1px !important;
+    height: 1px !important;
+    outline: none !important;
+    border: none !important;
+    *font: 0/0 a !important;
+    background: none !important;
 }
 
 .selectric-temp-show {
     transition: 1s;
-  position: absolute !important;
-  visibility: hidden !important;
-  display: block !important;
+    position: absolute !important;
+    visibility: hidden !important;
+    display: block !important;
 }
 
 /* Items box */
 .selectric-items {
     transition: 1s;
-  display: none;
-  border-radius: 4px;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background: #041328;
-  border: 1px solid red;
-  z-index: 1;
-  box-shadow: 0 0 10px -6px;
+    display: none;
+    border-radius: 4px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #041328;
+    border: 1px solid red;
+    z-index: 1;
+    box-shadow: 0 0 10px -6px;
 }
 
 .selectric-items .selectric-scroll {
     transition: 1s;
-  height: 100%;
-  overflow: auto;
+    height: 100%;
+    overflow: auto;
 }
 
 .selectric-above .selectric-items {
     transition: 1s;
-  top: auto;
-  bottom: 100%;
+    top: auto;
+    bottom: 100%;
 }
 
 .selectric-items ul, .selectric-items li {
     transition: 1s;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  font-size: 12px;
-  line-height: 20px;
-  min-height: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    line-height: 20px;
+    min-height: 20px;
 }
 
 .selectric-items li {
     transition: 1s;
-  display: block;
-  padding: 5px;
-  color: white;
-  cursor: pointer;
+    display: block;
+    padding: 5px;
+    color: white;
+    cursor: pointer;
 }
 
 .selectric-items li.selected {
     transition: 1s;
-  background: #5c5f6a;
-  color: #FFF;
+    background: #5c5f6a;
+    color: #FFF;
 }
 
 .selectric-items li.highlighted {
     transition: 1s;
-  background: transparent;
-  color: black;
+    background: transparent;
+    color: black;
 }
 
 .selectric-items li:hover {
     transition: 1s;
-  background: #172d4c;
-  color: white;
+    background: #172d4c;
+    color: white;
 }
 
 .selectric-items .disabled {
     transition: 1s;
-  filter: alpha(opacity=50);
-  opacity: 0.5;
-  cursor: default !important;
-  background: none !important;
-  color: #FFF !important;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+    cursor: default !important;
+    background: none !important;
+    color: #FFF !important;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .selectric-items .selectric-group .selectric-group-label {
     transition: 1s;
-  font-weight: bold;
-  padding-left: 10px;
-  cursor: default;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  background: none;
-  color: #FFF;
+    font-weight: bold;
+    padding-left: 10px;
+    cursor: default;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background: none;
+    color: #FFF;
 }
 
 .selectric-items .selectric-group.disabled li {
     transition: 1s;
-  filter: alpha(opacity=100);
-  opacity: 1;
+    filter: alpha(opacity=100);
+    opacity: 1;
 }
 
 .selectric-items .selectric-group li {
     transition: 1s;
-  padding-left: 25px;
+    padding-left: 25px;
 }

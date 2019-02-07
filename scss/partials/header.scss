@@ -2,13 +2,11 @@
 @import "mixins";
 @import "fonts";
 
-
-
-header{
+header {
   @include flex(flex, center, center, column wrap);
   @include heightAndWidth(91%, 100%);
   margin: $marginSize;
-  @media screen and (min-width: $tablet-width){
+  @media screen and (min-width: $tablet-width) {
     @include flex(flex, center, center, row nowrap);
     @media screen and (min-width: $desktop-width) {
       @include flex(flex, left, center, row nowrap);
@@ -17,41 +15,38 @@ header{
   }
 }
 
-
-.minified{
+.minified {
   @include heightAndWidth(44%, 100%);
   transition: $primary-Transition;
-  @media screen and (min-width: $tablet-width){
+  @media screen and (min-width: $tablet-width) {
     @include heightAndWidth(20%, 100%);
     @include flex(flex, flex-start, flex-start, row);
   }
-  .logo img{
+  .logo img {
     transition: $primary-Transition;
     @include heightAndWidth(100px, 150px);
   }
-  .search-option p{
+  .search-option p {
     font-size: $mainFontSize / 1.2;
     transition: $primary-Transition;
 
   }
 
-  .search-form .search-option{
+  .search-form .search-option {
     transition: $primary-Transition;
   }
 
-  .search-form .search-option p{
+  .search-form .search-option p {
     margin-bottom: 0;
     transition: $primary-Transition;
   }
 
-  }
+}
 
-
-
-.search-form{
+.search-form {
   padding: $paddingSize;
   @include flex(flex, center, center, null);
-  .search-option{
+  .search-option {
     display: inline-block;
     position: relative;
     text-align: $textAlign;
@@ -61,18 +56,15 @@ header{
 
 }
 
-
-
-
-.logo{
+.logo {
   @include flex(flex, center, center, null);
   padding: $paddingSize;
   margin-bottom: $marginBot;
   text-align: $textAlign;
 
-  img{
+  img {
     @include heightAndWidth(200px, 200px);
-    @media screen and (min-width: $tablet-width){
+    @media screen and (min-width: $tablet-width) {
       @include heightAndWidth(300px, 200px);
     }
   }
